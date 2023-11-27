@@ -1,0 +1,5 @@
+#!bin/sh
+
+./lbtree thread 1 mempool 10240 nvmpool ${NVMFILE} 40960 bulkload 50000000 data/k50m 1.0 insert 50000000 data/insert50m
+
+./lbtree thread 1 mempool 10240 nvmpool ${NVMFILE} 10240 bulkload 100000000 data/k100m 1.0 lookup 50000000 data/search50m
